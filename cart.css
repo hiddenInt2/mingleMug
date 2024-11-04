@@ -1,0 +1,27 @@
+body {margin: 0;}
+
+#spacer {
+    width: 100%;
+    aspect-ratio: 6/1;
+    background-color: red;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.cartWrapperGrid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+}
+.cartSubGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+}
+.cartSubGrid div {
+    color: blue;
+}
