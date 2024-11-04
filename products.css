@@ -1,0 +1,86 @@
+body {margin: 0;}
+
+h1 {
+    text-align: center;
+    font-family: Nickainley;
+    font-size: 100px;
+    color: #56382e;
+    box-shadow:#000000;
+}
+
+h2 {
+    text-align: center;
+    font-family: Nickainley;
+    font-size: 50px;
+    color: #56382e;
+    box-shadow:#000000;
+}
+
+.spacer {
+    width: 100%;
+    aspect-ratio: 8/1;
+    background-color: #e6d4b4;
+}
+
+.morning {
+    width: 100%;
+    background-color: #e6d4b4;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.morningGrid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    margin-bottom: 50px;
+}
+.morningImgs {
+    width: 60%;
+    aspect-ratio: 1/1;
+    margin-left: 20%;
+    background-color: #bad1eb;
+}
+
+.afternoon {
+    width: 100%;
+    background-color: #c6b297;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.afternoonGrid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    margin-bottom: 50px;
+}
+.afternoonImgs {
+    width: 60%;
+    aspect-ratio: 1/1;
+    margin-left: 20%;
+    background-color: #bad1eb;
+}
+
+.evening {
+    width: 100%;
+    background-color: #a58e78;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.eveningGrid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    margin-bottom: 50px;
+}
+.eveningImgs {
+    width: 60%;
+    aspect-ratio: 1/1;
+    margin-left: 20%;
+    background-color: #bad1eb;
+}
