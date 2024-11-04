@@ -1,0 +1,191 @@
+#logoWrapper {
+    position: fixed;
+    background-color: aqua;
+    width: 5%;
+    left: 1.25%;
+    aspect-ratio: 1/1.5;
+}
+#logo {
+    position: relative;
+    width: 100%;
+    height: 66.66%;;
+    margin-top: 25%;
+    background-color: blue;
+}
+#nameWrapper {
+    position: fixed;
+    background-color: aqua;
+    width: 15%;
+    left: 42.5%;
+    aspect-ratio: 2/1;
+}
+#name {
+    position: relative;
+    width: 100%;
+    height: 66.66%;;
+    margin-top: 8%;
+    background-color: blue;
+}
+#dropdownMenuWrapper {
+    position: fixed;
+    background-color: aqua;
+    width: 5%;
+    right: 1.25%;
+    aspect-ratio: 1/1.5;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 66.66%;
+    margin-top: 25%;
+    background-color: blue;
+    overflow: visible;
+}
+#dropdownContent {
+    position: relative;
+    display: none;
+    width: 300%;
+    margin-left: -200%;
+    margin-top: 100%;
+    padding: 0;
+}
+#dropdownContent a {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-left: -10%;
+    padding: 6% 5%;
+    background-color: #e5d3b3;
+    text-decoration: none;
+}
+#dropdown:hover #dropdownContent {display: block;}
+#dropdownContent a:hover {background-color: #ccb896;}
+
+
+.headerBackground {
+    position: fixed;
+    top: 0%;
+}
+.headerBackground div {
+    position: fixed;
+    width: 6.25%;
+}
+.headerBackground .convex {background-color: #56382e;}
+.concave {overflow: hidden;}
+.concave::before {
+    padding-bottom: 100%;
+    border-radius: 100%;
+    box-shadow: 10px -10px 5px 300px #56382e;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+}
+
+.aa {
+    aspect-ratio: 1/3.5;
+    left: -3.125%;
+    border-radius: 0 0 50% 50% / 14.29%;
+}
+.bb {
+    aspect-ratio: 1/2;
+    left: 3.125%;
+}
+.bb::before {top: 75%;}
+.cc {
+    aspect-ratio: 1/2.5;
+    left: 9.375%;
+    border-radius: 0 0 50% 50% / 20%;
+}
+.dd {
+    aspect-ratio: 1/1.5;
+    left: 15.625%;
+}
+.dd::before {top: 65%;}
+.ee {
+    aspect-ratio: 1/2;
+    left: 21.875%;
+    border-radius: 0 0 50% 50% / 25%;
+}
+.ff {
+    aspect-ratio: 1/1.5;
+    left: 28.125%;
+}
+.ff::before {top: 65%;}
+.gg {
+    aspect-ratio: 1/2.5;
+    left: 34.375%;
+    border-radius: 0 0 50% 50% / 20%;
+}
+.hh {
+    aspect-ratio: 1/2;
+    left: 40.625%;
+}
+.hh::before {top: 75%;}
+.ii {
+    aspect-ratio: 1/2.5;
+    left: 46.875%;
+    border-radius: 0 0 50% 50% / 20%;
+}
+.jj {
+    aspect-ratio: 1/1.5;
+    left: 53.125%;
+}
+.jj::before {top: 65%;}
+.kk {
+    aspect-ratio: 1/2;
+    left: 59.375%;
+    border-radius: 0 0 50% 50% / 25%;
+}
+.ll {
+    aspect-ratio: 1/1.5;
+    left: 65.625%;
+}
+.ll::before {top: 65%;}
+.mm {
+    aspect-ratio: 1/2.5;
+    left: 71.875%;
+    border-radius: 0 0 50% 50% / 20%;
+}
+.nn {
+    aspect-ratio: 1/2;
+    left: 78.125%;
+}
+.nn::before {top: 75%;}
+.oo {
+    aspect-ratio: 1/3;
+    left: 84.375%;
+    border-radius: 0 0 50% 50% / 16.67%;
+}
+.pp {
+    aspect-ratio: 1/2.5;
+    left: 90.625%;
+}
+.pp::before {top: 80%;}
+.qq {
+    aspect-ratio: 1/3;
+    left: 96.875%;
+    border-radius: 0 0 50% 50% / 16.67%;
+}
+
+.layer2 {
+    position: fixed;
+    top: 0.125%;
+}
+.layer2 div {
+    position: fixed;
+    width: 6.25%;
+    margin-left: -1%;
+}
+.layer2 .convex {
+    background-color: #e5d3b3;
+    /* TODO: Make scalable shadows */
+}
+.layer2 .concave::before {
+    box-shadow: 10px -10px 5px 300px #e5d3b3;
+    /* TODO: Make scalable shadows */
+}

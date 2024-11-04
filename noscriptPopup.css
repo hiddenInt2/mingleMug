@@ -1,0 +1,30 @@
+noscript div {
+    position: fixed;
+    font-family: 'Courier New', monospace;
+    color: #56382e;
+    top: 0%;
+}
+noscript a {
+    display: block;
+    margin: 15px;
+    margin-bottom: 5px;
+    color: darkred;
+    float: right;
+}
+noscript p {margin: 15px;}
+
+.noscriptFilter {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(13px);
+    background-color: rgb(39,31,28,0.75);
+}
+.noscriptMessage {
+    margin-top: 25px;
+    margin-left: 12.5%;
+    width: 75%;
+    background-color: #e5d3b3;
+    border-radius: 5px;
+    border: 2px solid #56382e;
+}
+#noscript:target {display: none;}
