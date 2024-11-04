@@ -1,0 +1,276 @@
+body{
+    background-color:lightgrey;
+}
+h1{
+    font-size:40px;
+    
+}
+h2{
+    margin-left:72px;
+}
+.title{
+    font-size:30px;
+    font-style:italic;
+    font:bold;
+}
+.price{
+    font-size:20px;
+    margin-left:300px;
+    margin-top:-48px;
+    font-style:oblique;
+}
+.quantity{
+    font-size:20px;
+    margin-left:500px;
+    margin-top:-40px;
+    font-style:oblique;
+}
+.discription{
+    margin-left:300px;
+    font-style:oblique;
+
+}
+.category{
+    margin-left:300px;
+    margin-top:-50px;
+    
+}
+.container{
+    display:flex;
+    height:100vn;
+}
+.leftpanel{
+    width:90px;
+    height:350px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color:gray;
+    padding: 100px;
+}
+.rightpanel{
+    width:1000px;
+    height:540px;
+    background-color:peachpuff;
+}
+
+.productbuttons{
+   
+    margin-top:200px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    margin-left:350px;
+    
+   
+}
+.placeholder{
+    margin-top:-115px;
+    margin-left:20px;
+    width:260px;
+    height:260px;
+
+}
+button:hover{
+    background-color:aliceblue;
+    color:black;
+} 
+.back{
+    width:180px;
+    height:60px;
+    color:black;
+    background-color:burlywood;
+    font-style:Bold;
+    margin-top:-100px;
+    margin-left:-290px;
+    border-radius:1px;
+    border-color:black;
+    
+    
+
+}
+.edit{
+    width:180px;
+    height:60px;
+    margin:8px;
+    color:whitesmoke;
+    background-color:blue;
+    font-style:Bold;
+    border-radius:90%;
+
+
+}
+
+.add{
+    width:180px;
+    height:60px;
+    margin:8px;
+    color:whitesmoke;
+    background-color:blue;
+    font-style:Bold;
+    border-radius:90%;
+    
+
+}
+.delete{
+    width:180px;
+    height:60px;
+    margin:8px; 
+    color:whitesmoke;
+    background-color:blue;
+    font-style:Bold;
+    border-radius:90%;
+    
+}
+.productlist{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    margin-top: -100px;
+    margin-left:168px;
+}
+.productone{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producttwo{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productthree{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productfour{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productfive{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productsix{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productseven{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producteight{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productnine{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productten{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producteleven{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producttwelve{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productthirteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productfourteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productfifiteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productsixteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productseventeen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producteighteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.productninthteen{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.producttwenty{
+    width:265px;
+    height:52px;
+    margin:1px;
+    font-size:16px;
+    background-color:burlywood;
+}
+.lorem{
+    margin-left:300px;
+    
+    
+    
+}
