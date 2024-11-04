@@ -1,0 +1,58 @@
+body{
+    background-color:peachpuff;
+}
+.Completed{
+    width:200px;
+    height:40px;
+    margin:6px;
+    font-size:16px;
+}
+button:hover{
+    background-color:lightgrey;
+}
+
+.Fulfilled{
+    width:200px;
+    height:40px;
+    margin:6px;
+    font-size:16px;
+}
+
+.Product{
+    width:200px;
+    height:40px;
+    margin:6px;
+    font-size:16px;
+}
+.Logout{
+    width:200px;
+    height:40px;
+    margin:6px;
+    font-size:16px;
+   
+}
+
+.Kill{
+    width:200px;
+    height:40px;
+    margin:6px;
+    font-size:16px;
+    
+}
+
+.group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:100vh;    
+    
+}
+button{
+    width:200px;
+    height:40px;
+    margin:10px;
+    font-size:16px;
+    border-radius:1px;
+    border-color:black;
+}
