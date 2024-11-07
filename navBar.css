@@ -1,6 +1,5 @@
 #logoWrapper {
     position: fixed;
-    background-color: aqua;
     width: 5%;
     left: 1.25%;
     aspect-ratio: 1/1.5;
@@ -14,7 +13,6 @@
 }
 #nameWrapper {
     position: fixed;
-    background-color: aqua;
     width: 15%;
     left: 42.5%;
     aspect-ratio: 2/1;
@@ -28,7 +26,6 @@
 }
 #dropdownMenuWrapper {
     position: fixed;
-    background-color: aqua;
     width: 5%;
     right: 1.25%;
     aspect-ratio: 1/1.5;
@@ -40,7 +37,8 @@
     width: 100%;
     height: 66.66%;
     margin-top: 25%;
-    background-color: blue;
+    background-image: url("menu.png");
+    background-size: cover;
     overflow: visible;
 }
 #dropdownContent {
