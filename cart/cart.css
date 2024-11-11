@@ -12,16 +12,22 @@ body {margin: 0;}
     background-color: blueviolet;
 }
 
-.cartWrapperGrid {
+#cartWrapperGrid {
     width: 80%;
+    margin-left: 10%;
     display: grid;
     grid-template-columns: auto;
 }
 .cartSubGrid {
     width: 100%;
     display: grid;
+    margin-bottom: 15px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+    align-items: center;
 }
-.cartSubGrid div {
-    color: blue;
+
+.productImage {
+    width: 35%;
+    background-color: blue;
+    aspect-ratio: 1/1;
 }
