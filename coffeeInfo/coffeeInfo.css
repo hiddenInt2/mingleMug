@@ -9,13 +9,6 @@ body {margin: 0;}
     background-size: cover;
     background-position: center;
 }
-#beans {
-    position: fixed;
-    width: 100%;
-    aspect-ratio: 1.33/1;
-    bottom: 0%;
-    background-size: cover;
-}
 #spacer {
     position: relative;
     width: 100%;
