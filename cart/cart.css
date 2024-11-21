@@ -14,7 +14,7 @@ body {margin: 0;}
 
 #cartWrapperGrid {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
     display: grid;
     grid-template-columns: auto;
 }
@@ -24,10 +24,42 @@ body {margin: 0;}
     margin-bottom: 15px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
     align-items: center;
+    background-color: antiquewhite;
+    padding: 3%;
+    border-radius: 15px;
 }
 
 .productImage {
     width: 35%;
     background-color: blue;
     aspect-ratio: 1/1;
+}
+.quantity {
+    width: 52%;
+    background-color: blue;
+    aspect-ratio: 3/1;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid white;
+    white-space: nowrap;
+}
+.quantity div {
+    width: 33.33%;
+    aspect-ratio: 1/1;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    float: left;
+}
+.increment {margin-left: -2px;}
+.decrement {margin-right: -3px;}
+
+.checkout {
+    display: block;
+    margin: auto;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
