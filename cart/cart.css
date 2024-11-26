@@ -2,14 +2,7 @@ body {margin: 0;}
 
 #spacer {
     width: 100%;
-    aspect-ratio: 6/1;
-    background-color: red;
-}
-
-#title {
-    width: 100%;
-    text-align: center;
-    background-color: blueviolet;
+    aspect-ratio: 5/1;
 }
 
 #cartWrapperGrid {
@@ -17,6 +10,8 @@ body {margin: 0;}
     margin-left: 8%;
     display: grid;
     grid-template-columns: auto;
+    color: white;
+    font-weight: bold;
 }
 .cartSubGrid {
     width: 100%;
@@ -24,9 +19,10 @@ body {margin: 0;}
     margin-bottom: 15px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
     align-items: center;
-    background-color: purple;
     padding: 3%;
     border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .productImage {
