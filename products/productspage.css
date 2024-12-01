@@ -14,7 +14,7 @@ h1 {
     text-align: center;
     font-size: 100px;
     color: #56382e;
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 50px;
 }
 
@@ -25,27 +25,33 @@ h2 {
     line-height: 1;
 }
 
+.morning-container {
+    padding: 0px;
+}
+
+.afternoon-container {
+    padding: 0px;
+}
+
+.morning-container {
+    padding: 0px;
+}
+
 .morning-section {
     background-color: #e6d4b4;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0;
+    padding: 50px;
     border: none;
 }
 
 .afternoon-section {
     background-color: #c6b297;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0;
+    padding: 50px;
     border: none;
 }
 
 .evening-section {
     background-color: #a58e78;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0;
+    padding: 50px;
     border: none;
 }
 
@@ -63,6 +69,7 @@ li {
 
 .product-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 0;
@@ -71,7 +78,7 @@ li {
 
 .product-list li {
     text-align: center;
-    width: 30%;
+    width: calc(25% - 20px);
 }
 
 .product-list img {
