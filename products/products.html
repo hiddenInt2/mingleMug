@@ -15,17 +15,17 @@
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
                 <div><h2>Desserts</h2></div>
-                <div class="carousel" data-carousel="morning-drinks">
+                <div class="carousel" data-carousel="morning-drinks" onclick="window.location.href='productspage.html#morning-drinks'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="morning-food">
+                <div class="carousel" data-carousel="morning-food" onclick="window.location.href='productspage.html#morning-food'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="morning-desserts">
+                <div class="carousel" data-carousel="morning-desserts" onclick="window.location.href='productspage.html#morning-desserts'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
@@ -39,17 +39,17 @@
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
                 <div><h2>Desserts</h2></div>
-                <div class="carousel" data-carousel="afternoon-drinks">
+                <div class="carousel" data-carousel="afternoon-drinks" onclick="window.location.href='productspage.html#afternoon-drinks'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="afternoon-food">
+                <div class="carousel" data-carousel="afternoon-food" onclick="window.location.href='productspage.html#afternoon-food'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="afternoon-desserts">
+                <div class="carousel" data-carousel="afternoon-desserts" onclick="window.location.href='productspage.html#afternoon-desserts'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
@@ -63,17 +63,17 @@
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
                 <div><h2>Desserts</h2></div>
-                <div class="carousel" data-carousel="evening-drinks">
+                <div class="carousel" data-carousel="evening-drinks" onclick="window.location.href='productspage.html#evening-drinks'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="evening-food">
+                <div class="carousel" data-carousel="evening-food" onclick="window.location.href='productspage.html#evening-food'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
                 </div>
-                <div class="carousel" data-carousel="evening-desserts">
+                <div class="carousel" data-carousel="evening-desserts" onclick="window.location.href='productspage.html#evening-desserts'">
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
                     <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
@@ -106,7 +106,6 @@
                 });
             });
 
-            document.addEventListener("DOMContentLoaded", function () {
         const currentTime = new Date();
         const hours = currentTime.getHours();
 
@@ -121,7 +120,6 @@
         } else if (hours >= 17 && hours < 22) {
             eveningSection.scrollIntoView({ behavior: 'smooth' });
         }
-    });
             </script>            
 
         <div class="headerBackground layer2">
