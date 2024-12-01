@@ -105,6 +105,23 @@
                     }, 3000);
                 });
             });
+
+            document.addEventListener("DOMContentLoaded", function () {
+        const currentTime = new Date();
+        const hours = currentTime.getHours();
+
+        const morningSection = document.querySelector('.morning');
+        const afternoonSection = document.querySelector('.afternoon');
+        const eveningSection = document.querySelector('.evening');
+
+        if (hours >= 6 && hours < 11) {
+            morningSection.scrollIntoView({ behavior: 'smooth' });
+        } else if (hours >= 11 && hours < 17) {
+            afternoonSection.scrollIntoView({ behavior: 'smooth' });
+        } else if (hours >= 17 && hours < 22) {
+            eveningSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
             </script>            
 
         <div class="headerBackground layer2">
