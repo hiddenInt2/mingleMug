@@ -2,21 +2,17 @@ body {margin: 0;}
 
 #spacer {
     width: 100%;
-    aspect-ratio: 6/1;
-    background-color: red;
-}
-
-#title {
-    width: 100%;
-    text-align: center;
-    background-color: blueviolet;
+    aspect-ratio: 5/1;
 }
 
 #cartWrapperGrid {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
     display: grid;
     grid-template-columns: auto;
+    color: white;
+    font-weight: bold;
+    max-width: 1000px;
 }
 .cartSubGrid {
     width: 100%;
@@ -24,10 +20,51 @@ body {margin: 0;}
     margin-bottom: 15px;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
     align-items: center;
+    padding: 3%;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .productImage {
     width: 35%;
     background-color: blue;
     aspect-ratio: 1/1;
+}
+.quantity {
+    width: 52%;
+    background-color: blue;
+    aspect-ratio: 3/1;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid white;
+    white-space: nowrap;
+}
+.quantity div {
+    width: 33.33%;
+    aspect-ratio: 1/1;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    float: left;
+}
+.increment {margin-left: -2px;}
+.decrement {margin-right: -3px;}
+
+.checkout {
+    display: block;
+    margin: auto;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e5d3b3;
+    color: #56382e;
+    font-size: x-large;
+}
+
+@media only screen and (min-width: 1200px) {
+    #cartWrapperGrid {margin-left: calc((100% - 1060px)/2);}
 }
