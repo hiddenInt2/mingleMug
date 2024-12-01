@@ -95,3 +95,34 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.carousel {
+    position: relative;
+    width: 60%;
+    aspect-ratio: 1/1;
+    margin-left: 20%;
+    overflow: hidden;
+    background-color: #bad1eb;
+}
+
+.carouselImgs {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.carouselImgs.active {
+    left: 0;
+    opacity: 1;
+}
+
+.carouselImgs.previous {
+    left: -100%;
+}

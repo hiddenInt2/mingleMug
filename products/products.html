@@ -14,22 +14,46 @@
             <div class="morningGrid">
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
-                <div><h2>Deserts</h2></div>
-                <div><div class="morningImgs" style = "background-image: url('./Products_Images/Drink_Image_1.png');"></div></div>
-                <div><div class="morningImgs" style = "background-image: url('./Products_Images/Food_Image_1.png');"></div></div>
-                <div><div class="morningImgs" style = "background-image: url('./Products_Images/Dessert_Image_1.png');"></div></div>
+                <div><h2>Desserts</h2></div>
+                <div class="carousel" data-carousel="morning-drinks">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="morning-food">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="morning-desserts">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
+                </div>
             </div>
-        </div>
+        </div>                
 
         <div class="afternoon">
             <h1>Afternoon</h1>
             <div class="afternoonGrid">
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
-                <div><h2>Deserts</h2></div>
-                <div><div class="afternoonImgs" style = "background-image: url('./Products_Images/Drink_Image_1.png');"></div></div>
-                <div><div class="afternoonImgs" style = "background-image: url('./Products_Images/Food_Image_1.png');"></div></div>
-                <div><div class="afternoonImgs" style = "background-image: url('./Products_Images/Dessert_Image_1.png');"></div></div>
+                <div><h2>Desserts</h2></div>
+                <div class="carousel" data-carousel="afternoon-drinks">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="afternoon-food">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="afternoon-desserts">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
+                </div>
             </div>
         </div>
 
@@ -38,12 +62,50 @@
             <div class="eveningGrid">
                 <div><h2>Drinks</h2></div>
                 <div><h2>Food</h2></div>
-                <div><h2>Deserts</h2></div>
-                <div><div class="eveningImgs" style = "background-image: url('./Products_Images/Drink_Image_1.png');"></div></div>
-                <div><div class="eveningImgs" style = "background-image: url('./Products_Images/Food_Image_1.png');"></div></div>
-                <div><div class="eveningImgs" style = "background-image: url('./Products_Images/Dessert_Image_1.png');"></div></div>
+                <div><h2>Desserts</h2></div>
+                <div class="carousel" data-carousel="evening-drinks">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Drink_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="evening-food">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Food_Image_3.png');"></div>
+                </div>
+                <div class="carousel" data-carousel="evening-desserts">
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_1.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_2.png');"></div>
+                    <div class="carouselImgs" style="background-image: url('./Products_Images/Dessert_Image_3.png');"></div>
+                </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const carousels = document.querySelectorAll("[data-carousel]");
+                
+                carousels.forEach((carousel) => {
+                    const images = carousel.querySelectorAll(".carouselImgs");
+                    let currentIndex = 0;
+            
+                    function updateCarousel() {
+                        images.forEach((img, index) => {
+                            img.classList.remove("active", "previous");
+                            if (index === currentIndex) img.classList.add("active");
+                            else if (index === (currentIndex + images.length - 1) % images.length) img.classList.add("previous");
+                        });
+                    }
+            
+                    updateCarousel();
+            
+                    setInterval(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        updateCarousel();
+                    }, 3000);
+                });
+            });
+            </script>            
 
         <div class="headerBackground layer2">
             <div class="convex aa"></div>
