@@ -28,8 +28,8 @@ h2 {
     width: 100%;
     background-color: #e6d4b4;
     height: fit-content;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .morningGrid {
@@ -52,8 +52,8 @@ h2 {
     width: 100%;
     background-color: #c6b297;
     height: fit-content;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .afternoonGrid {
@@ -76,8 +76,8 @@ h2 {
     width: 100%;
     background-color: #a58e78;
     height: fit-content;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .eveningGrid {
