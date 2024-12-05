@@ -46,6 +46,19 @@ h2 {
     border: none;
 }
 
+li:hover{
+    width: 200px;
+    height: 100px;
+    background-color: #176ea8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
 .afternoon-section {
     background-color: #c6b297;
     padding: 50px;
