@@ -70,6 +70,21 @@ body {margin: 0;}
     color: #56382e;
     font-size: x-large;
 }
+button:hover{
+    display: block;
+    margin: auto;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #c0841c;
+    color: #141313;
+    font-size: x-large; 
+    
+}
 
 #spacer {
     width: 100%;
