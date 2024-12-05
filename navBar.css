@@ -1,38 +1,29 @@
-#logoWrapper {
+#logo {
     position: fixed;
     width: 5%;
     left: 1.25%;
+    top: 0;
     aspect-ratio: 1/1.5;
-}
-#logo {
-    position: relative;
-    width: 100%;
-    height: 66.66%;;
-    margin-top: 25%;
     background-image: url("navBarImages/logo.png");
-    background-size: cover;
-    overflow: visible;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#nameWrapper {
+#name {
     position: fixed;
     width: 15%;
     left: 42.5%;
+    top: 0;
     aspect-ratio: 2/1;
-}
-#name {
-    position: relative;
-    width: 500px;
-    height: 66.66%;;
-    margin-top: 8%;
-    margin-left: -150px;
     background-image: url("navBarImages/name.png");
-    background-size: cover;
-    overflow: visible;
-    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #dropdownMenuWrapper {
     position: fixed;
+    top: 0;
     width: 5%;
     right: 1.25%;
     aspect-ratio: 1/1.5;
@@ -82,6 +73,7 @@
 .headerBackground {
     position: fixed;
     top: 0%;
+    text-align: initial;
 }
 .headerBackground div {
     position: fixed;
