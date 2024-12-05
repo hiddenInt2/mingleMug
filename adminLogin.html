@@ -12,9 +12,13 @@
     </style>
 
 <body>
-    <form action="login.php" method="POST"></form>
-    <form>
+    <form action="login.php" method="POST">
         <h1>Admin Sign In</h1>
+        <?php 
+        if (!empty($error)) {
+            echo "<p style='color: red;'>$error</p>";
+        }
+        ?>
         <div class="align">
             <div class="username">
                 <label for="username">Username:</label>
