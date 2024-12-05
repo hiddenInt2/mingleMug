@@ -16,11 +16,13 @@
             <div class="cartSubGrid">
                 <div><div class="productImage"></div></div>
                 <div>Product Name</div>
-                <div><div class="quantity">
-                    <div class="increment"><h2>+</h2></div>
-                    <div class="qval"><h2>1</h2></div>
-                    <div class="decrement"><h2>-</h2></div>
-                </div></div>
+                <div>
+                    <div class="quantity">
+                        <div class="increment" id="increment"><h2>+</h2></div>
+                        <div class="qval" id="qval"><h2>0</h2></div>
+                        <div class="decrement" id="decrement"><h2>-</h2></div>
+                    </div>
+                </div>
                 <div>Price</div>
             </div>
             <div class="cartSubGrid">
@@ -118,5 +120,22 @@
                 <p>To enhance your experience, we recommend enabling Javascript for this website. We do not collect or store user information other than site traffic statistics gathered by Dreamhost. We also do not sell any user information.</p>
             </div>
         </noscript>
+
+        <script>
+            document.getElementById('increment').addEventListener('click', function() {
+                const quantityDiv = document.getElementById('qval');
+                const currentValue = parseInt(quantityDiv.textContent); // Get the current value
+                quantityDiv.textContent = currentValue + 1; // Increment and update the displayed value
+            });
+
+            document.getElementById('decrement').addEventListener('click', function() {
+                const quantityDiv = document.getElementById('qval');
+                const currentValue = parseInt(quantityDiv.textContent); // Get the current value
+                if (currentValue > 0) {
+                    quantityDiv.textContent = currentValue - 1; // Decrement and update the displayed value
+                 }
+            });
+
+        </script>
     </body>
 </html>
