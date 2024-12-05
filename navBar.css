@@ -16,9 +16,10 @@
     top: 0;
     aspect-ratio: 2/1;
     background-image: url("navBarImages/name.png");
-    background-size: contain;
-    background-position: center;
+    background-size:120%;
+    background-position:center;
     background-repeat: no-repeat;
+    
 }
 
 #dropdownMenuWrapper {
