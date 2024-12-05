@@ -138,16 +138,16 @@
 
         <script> // hey drew, I did the same thing in an above script tag but with a lot less code if you want to take a look
             document.getElementById('increment').addEventListener('click', function() {
-                const quantityDiv = document.getElementById('qval');
-                const currentValue = parseInt(quantityDiv.textContent); // Get the current value
-                quantityDiv.textContent = currentValue + 1; // Increment and update the displayed value
+                const quantityDivinc = document.getElementById('qval');
+                const currentValueinc = parseInt(quantityDivinc.textContent); // Get the current value
+                quantityDivinc.textContent = currentValueinc + 1; // Increment and update the displayed value
             });
 
             document.getElementById('decrement').addEventListener('click', function() {
-                const quantityDiv = document.getElementById('qval');
-                const currentValue = parseInt(quantityDiv.textContent); // Get the current value
-                if (currentValue > 0) {
-                    quantityDiv.textContent = currentValue - 1; // Decrement and update the displayed value
+                const quantityDivdec = document.getElementById('qval');
+                const currentValuedec = parseInt(quantityDivdec.textContent); // Get the current value
+                if (currentValuedec > 0) {
+                    quantityDivdec.textContent = currentValuedec - 1; // Decrement and update the displayed value
                  }
             });
 
