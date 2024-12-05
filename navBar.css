@@ -66,9 +66,17 @@
     background-color: #e5d3b3;
     text-decoration: none;
 }
-
-#dropdown:hover #dropdownContent {display: block;}
-#dropdownContent a:hover {background-color: #ccb896;}
+#dropdown:hover{
+    background-image: url("navBarImages/menu2.png");
+}
+#dropdown:hover #dropdownContent {
+    display: block;
+    
+}
+#dropdownContent a:hover {
+    background-color: #ccb896;
+   
+}
 
 
 .headerBackground {
