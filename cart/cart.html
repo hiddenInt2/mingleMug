@@ -15,45 +15,60 @@
         <div id="cartWrapperGrid">
             <div class="cartSubGrid">
                 <div><div class="productImage"></div></div>
-                <div>Product Name</div>
+                <div>product1</div>
                 <div><div class="quantity">
-                    <div class="increment"><h2>+</h2></div>
-                    <div class="qval"><h2>1</h2></div>
-                    <div class="decrement"><h2>-</h2></div>
+                    <div class="increment" onclick="inc('product1')"><h2>+</h2></div>
+                    <div class="qval"><h2 id="amount_product1">1</h2></div>
+                    <div class="decrement" onclick="dec('product1')"><h2>-</h2></div>
                 </div></div>
                 <div>Price</div>
             </div>
             <div class="cartSubGrid">
                 <div><div class="productImage"></div></div>
-                <div>Product Name</div>
+                <div>product2</div>
                 <div><div class="quantity">
-                    <div class="increment"><h2>+</h2></div>
-                    <div class="qval"><h2>1</h2></div>
-                    <div class="decrement"><h2>-</h2></div>
+                    <div class="increment" onclick="inc('product2')"><h2>+</h2></div>
+                    <div class="qval"><h2 id="amount_product2">1</h2></div>
+                    <div class="decrement" onclick="dec('product2')"><h2>-</h2></div>
                 </div></div>
                 <div>Price</div>
             </div>
             <div class="cartSubGrid">
                 <div><div class="productImage"></div></div>
-                <div>Product Name</div>
+                <div>product3</div>
                 <div><div class="quantity">
-                    <div class="increment"><h2>+</h2></div>
-                    <div class="qval"><h2>1</h2></div>
-                    <div class="decrement"><h2>-</h2></div>
+                    <div class="increment" onclick="inc('product3')"><h2>+</h2></div>
+                    <div class="qval"><h2 id="amount_product3">1</h2></div>
+                    <div class="decrement" onclick="dec('product3')"><h2>-</h2></div>
                 </div></div>
                 <div>Price</div>
             </div>
             <div class="cartSubGrid">
                 <div><div class="productImage"></div></div>
-                <div>Product Name</div>
+                <div>product4</div>
                 <div><div class="quantity">
-                    <div class="increment"><h2>+</h2></div>
-                    <div class="qval"><h2>1</h2></div>
-                    <div class="decrement"><h2>-</h2></div>
+                    <div class="increment" onclick="inc('product4')"><h2>+</h2></div>
+                    <div class="qval"><h2 id="amount_product4">1</h2></div>
+                    <div class="decrement" onclick="dec('product4')"><h2>-</h2></div>
                 </div></div>
                 <div>Price</div>
             </div>
         </div>
+
+        <script>
+            function inc (product) {
+                var quantity = Number(document.getElementById("amount_" + product).textContent);
+                quantity++;
+                document.getElementById("amount_" + product).innerHTML = quantity;
+            }
+            function dec (product) {
+                var quantity = Number(document.getElementById("amount_" + product).textContent);
+                quantity--;
+                if (quantity > -1) {
+                    document.getElementById("amount_" + product).innerHTML = quantity;
+                }
+            }
+        </script>
 
         <button class="checkout">Checkout</button>
 
