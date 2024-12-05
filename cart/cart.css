@@ -33,7 +33,7 @@ body {margin: 0;}
 }
 .quantity {
     width: 52%;
-    background-color: blue;
+    background-color: rgba(0,0,0,0.4);
     aspect-ratio: 3/1;
     border-radius: 15px;
     overflow: hidden;
@@ -46,6 +46,12 @@ body {margin: 0;}
     border-left: 1px solid white;
     border-right: 1px solid white;
     float: left;
+    text-align: center;
+}
+.quantity div:hover {background-color: rgba(255, 255, 255, 0.1);}
+.quantity div h2 {
+    display: inline;
+    margin: auto;
 }
 .increment {margin-left: -2px;}
 .decrement {margin-right: -3px;}
