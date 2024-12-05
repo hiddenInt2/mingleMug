@@ -126,3 +126,8 @@ h2 {
 .carouselImgs.previous {
     left: -100%;
 }
+
+#spacer {
+    width: 100%;
+    aspect-ratio: 5/1;
+}

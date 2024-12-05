@@ -1,10 +1,5 @@
 body {margin: 0;}
 
-#spacer {
-    width: 100%;
-    aspect-ratio: 5/1;
-}
-
 #cartWrapperGrid {
     width: 80%;
     margin-left: 8%;
@@ -69,6 +64,11 @@ body {margin: 0;}
     background-color: #e5d3b3;
     color: #56382e;
     font-size: x-large;
+}
+
+#spacer {
+    width: 100%;
+    aspect-ratio: 5/1;
 }
 
 @media only screen and (min-width: 1200px) {

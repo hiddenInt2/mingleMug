@@ -14,7 +14,6 @@ h1 {
     text-align: center;
     font-size: 100px;
     color: #56382e;
-    margin-top: 200px;
     margin-bottom: 0px;
 }
 
@@ -116,4 +115,9 @@ li {
 .product-list p {
     margin-top: 10px;
     font-size: 20px;
+}
+
+#spacer {
+    width: 100%;
+    aspect-ratio: 5/1;
 }
