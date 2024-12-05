@@ -18,7 +18,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-.spacer {
+#spacer {
     width: 100%;
     aspect-ratio: 8/1;
     background-color: #e6d4b4;
@@ -125,9 +125,4 @@ h2 {
 
 .carouselImgs.previous {
     left: -100%;
-}
-
-#spacer {
-    width: 100%;
-    aspect-ratio: 5/1;
 }
