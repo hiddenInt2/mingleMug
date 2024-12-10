@@ -37,7 +37,9 @@
     height: 66.66%;
     margin-top: 25%;
     background-image: url("navBarImages/menu.png");
-    background-size: cover;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
     overflow: visible;
 }
 #dropdownContent {
@@ -45,7 +47,7 @@
     display: none;
     width: 300%;
     margin-left: -200%;
-    margin-top: 100%;
+    margin-top: 85%;
     padding: 0;
 }
 #dropdownContent a {
