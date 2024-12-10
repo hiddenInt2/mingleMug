@@ -16,7 +16,7 @@
     top: 0;
     aspect-ratio: 2/1;
     background-image: url("navBarImages/name.png");
-    background-size:120%;
+    background-size: contain;
     background-position:center;
     background-repeat: no-repeat;
     
