@@ -12,13 +12,9 @@
     </style>
 
 <body>
-    <form action="PHP/login.php" method="POST">
+    <form method="POST" id="loginForm">
         <h1>Admin Sign In</h1>
-        <?php 
-        if (!empty($error)) {
-            echo "<p style='color: red;'>$error</p>";
-        }
-        ?>
+        
         <div class="align">
             <div class="username">
                 <label for="username">Username:</label>
@@ -31,7 +27,7 @@
             </div>
 
             <div class="LoginButton">
-                <button type="submit">Login In</button>
+                <button type="submit" id="submit">Login In</button>
                 <a href="index.html">
                     <button type="button">Back Home</button>  
                 </a>     
@@ -41,5 +37,34 @@
              
     
     </form>
+    <script>
+        const validUsername = "username";
+        const validPassword = "password";
+
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Check credentials
+            if (username === validUsername && password === validPassword) {
+                alert("Login successful! Redirecting...");
+                window.location.href = "admin/adminhome.html"; // Redirect to a new page
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+
+        // Attach the event listener to the form
+        window.onload = function () {
+            const loginForm = document.getElementById("loginForm");
+            if (loginForm) {
+                loginForm.addEventListener("submit", validateLogin);
+            }
+        };
+
+    </script>
 </body>
 </html>
