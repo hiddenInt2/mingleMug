@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Orders</title>
+</head>
+<Style>
+    body{
+        background-image:url('../Main-pictures/Background2.png');
+        justify-content:center;
+        align-items:center;
+        display:flex;
+        margin: 300px;
+        height:100%;
+    }
+    .orders{
+        margin-left:auto;
+        margin-right:auto;
+        border-collapse: collapse;
+    }
+    th,td{
+        border:1px solid black;
+        padding:8px;
+        text-align:center;
+        font-size:22px;
+        background-color:lightskyblue;
+        color:black;
+    }
+</Style>
+<body>
+
+    <!--Connect to a database to show the latest orders-->
+   <table border="1" id="orders">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Order Details</th>
+        <th>Total Price</th>
+        <th>Order Time</th>
+        <th>Order Number</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+    </tr>
+   </table>
+</body>
+</html>
