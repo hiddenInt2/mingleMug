@@ -1,0 +1,61 @@
+body {
+    margin:0;
+    background-color: #171624;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div {
+    background-image: url("https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/e07889d0-9b3c-4d6c-9229-736098c511dd/80e167e4-f9db-4f81-b0b3-991a6cd7eee5.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    margin-top: 20%;
+    font-weight: bold;
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: invert(100%);
+    padding: 20px;
+}
+
+#killSwitch {
+    padding: 15px 20px;
+    width: 200px;
+    border-radius: 25px;
+    border: 3px solid #df5d2f;
+    background-color: #e68543;
+    font-weight: bold;
+}
+#killSwitch:hover {background-color: #df5d2f;}
+
+#glassCovering {
+    width: 230px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
