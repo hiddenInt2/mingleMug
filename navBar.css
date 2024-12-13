@@ -9,6 +9,17 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+#logo:hover{
+    position: fixed;
+    width: 5%;
+    left: 1.25%;
+    top: 0;
+    aspect-ratio: 1/1.5;
+    background-image: url("navBarImages/logo2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 #name {
     position: fixed;
     width: 15%;
