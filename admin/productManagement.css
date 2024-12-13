@@ -1,5 +1,19 @@
 body{
     background-color:lightgrey;
+    background-image: url("/Main-pictures/Background2.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    min-height: 100vh; /* Ensures the body is at least the viewport height */
+    display: flex; /* Uses flexbox for vertical alignment */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: space-between; /* Ensures content fills available space */
+    box-sizing: border-box; /* Includes padding and border in the dimensions */
+   
+
 }
 h1{
     font-size:40px;
@@ -7,6 +21,7 @@ h1{
 }
 h2{
     margin-left:72px;
+    font-size:28px;
 }
 .title{
     font-size:30px;
@@ -55,11 +70,11 @@ h2{
 
 .productbuttons{
    
-    margin-top:200px;
+    
     display:flex;
     flex-direction:row;
     align-items:flex-end;
-    margin-left:350px;
+    margin-left:700px;
     
    
 }
@@ -80,8 +95,7 @@ button:hover{
     color:black;
     background-color:burlywood;
     font-style:Bold;
-    margin-top:-100px;
-    margin-left:-290px;
+    margin-left:-680px;
     border-radius:1px;
     border-color:black;
     
