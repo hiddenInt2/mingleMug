@@ -50,10 +50,10 @@ $result = $conn->query($sql);
     </div>
 
     <script>
-        // JavaScript to load product details dynamically (Optional)
+        
         function showProductDetails(productId) {
-            // This function could make an AJAX request to fetch and display product details
-            alert("Product ID: " + productId); // Replace with AJAX logic
+            
+            alert("Product ID: " + productId); 
         }
     </script>
 </body>
