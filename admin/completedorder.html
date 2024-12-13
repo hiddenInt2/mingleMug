@@ -7,28 +7,47 @@
 </head>
 <Style>
     body{
-        background-image:url('../Main-pictures/Background2.png');
-        justify-content:center;
-        align-items:center;
-        display:flex;
-        margin: 300px;
-        height:100%;
+        background-image: url('../Main-pictures/Background2.png');
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+   
     .orders{
-        margin-left:auto;
-        margin-right:auto;
         border-collapse: collapse;
+        width: 80%;
+        text-align: center;
     }
     th,td{
-        border:1px solid black;
-        padding:8px;
-        text-align:center;
-        font-size:22px;
-        background-color:lightskyblue;
+        border: 1px solid black;
+        padding: 8px;
+        font-size: 22px;
+        background-color: lightskyblue;
+    }
+    button{
+        width: 180px;
+        height: 60px;
+        color: black;
+        background-color: burlywood;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin: 20px;
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        background-color:aliceblue;
         color:black;
     }
 </Style>
 <body>
+    <a href="adminhome.html">
+        <button class="back" type="button">Back to Admin Home</button>
+    </a>
 
     <!--Connect to a database to show the latest orders-->
    <table border="1" id="orders">
@@ -49,5 +68,11 @@
         <td>Data 6</td>
     </tr>
    </table>
+
+
+   
+
+  
+    
 </body>
 </html>
