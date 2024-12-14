@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch products from the database
+// Fetch products from the database time type
 $sql = "SELECT id, title, price, quantity, description, image, time_of_day, category FROM products";
 $result = $conn->query($sql);
 
