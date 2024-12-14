@@ -3,10 +3,11 @@
 session_start();
 
 // Database connection (replace with your database credentials)
-$host = "localhost"; // Database host
-$dbname = "your_database_name"; // Database name
-$username = "your_db_username"; // Database username
-$password = "your_db_password"; // Database password
+// https://east1-phpmyadmin.dreamhost.com/signon.php?lang=en
+$host = "mysql.minglemug.knechtkode.com"; // Database host
+$dbname = "productsInfo"; // Database name
+$username = "minglemug"; // Database username
+$password = "minglemug1204"; // Database password
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
