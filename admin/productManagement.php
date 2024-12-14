@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch products from the database time type
-$sql = "SELECT id, title, price, quantity, description, image, time_of_day, category FROM products";
+$sql = "SELECT name, type, price, quantity, time_of_day FROM products";
 $result = $conn->query($sql);
 
 ?>
@@ -36,7 +36,7 @@ $result = $conn->query($sql);
                 // Generate product buttons
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
-                        echo '<button class="product" onclick="showProductDetails(' . $row['id'] . ')">' . htmlspecialchars($row['title']) . '</button>';
+                        echo '<button class="product" onclick="showProductDetails(' . $row['name'] . ')">' . htmlspecialchars($row['name']) . '</button>';
                     }
                 } else {
                     echo "<p>No products available.</p>";
