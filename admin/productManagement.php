@@ -1,9 +1,9 @@
 <?php
 // Database connection
-$servername = "localhost";
-$username = "root"; 
-$password = ""; 
-$dbname = "product_management"; 
+$servername = "mysql.minglemug.knechtkode.com";
+$username = "minglemug"; 
+$password = "minglemug1204"; 
+$dbname = "productsInfo"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
