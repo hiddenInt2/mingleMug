@@ -17,8 +17,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if($productName && $productPrice && $productQuantity && $productType && $timeOFDay){
 
-        $stmt = $conn->prepare("INSERT INTO products (name, price, quantity, type, time_of_day Values(?, ?,?,?,?");
-        $STMT ->bind_param("sdisss",$productName,$productPrice,$productQuantity,$productType,$timeOfDay);
+        $stmt = $conn->prepare("INSERT INTO products (name, type, time_of_day, price, quantity Values(?, ?,?,?,?");
+        $STMT ->bind_param("sdisss",$productName,$productType,$timeOfDay,$productPrice,$productQuantity);
 
         if($stmt->excute()){
             echo"Product added successfully";
