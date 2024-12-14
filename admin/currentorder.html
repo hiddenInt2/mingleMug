@@ -15,9 +15,8 @@
         margin: 0;
         padding: 0;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows:1fr auto;
 
     }
    
@@ -25,11 +24,12 @@
         border-collapse: collapse;
         width: 80%;
         text-align: center;
+        
     }
     th,td{
         border: 1px solid black;
-        padding: 8px;
-        font-size: 22px;
+        padding: 10px;
+        font-size: 18px;
         background-color: lightskyblue;
     }
     .back{
@@ -43,38 +43,61 @@
         margin: 20px;
         display: block;
         text-align: center;
+        
     }
     .back:hover{
         background-color:aliceblue;
         color:black;
     }
+    .footer{
+        display:flex;
+        justify-content:flex-start;
+        padding:10px;
+    }
+    .container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+    }
 </Style>
 <body>
-    <a href="adminhome.html">
-        <button class="back" type="button">Back to Admin Home</button>
-    </a>
-
+    
+    <div class="container"> 
     <!--Connect to a database to show the latest orders-->
-   <table border="1" id="orders">
-    <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Order Details</th>
-        <th>Total Price</th>
-        <th>Time or Order</th>
-        <th>Estimated Time</th>
-        <th>Order Number</th>
-        <th>Fulfill</th>
-    </tr>
-    <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
-        <td>Data 4</td>
-        <td>Data 5</td>
-        <td>Data 6</td>
-        <td>Data 7</td>
-        <td><button>Commplete</button></td>
-    </tr>
-   </table>
+        <table border="1" id="orders">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Order Details</th>
+                <th>Total Price</th>
+                <th>Time or Order</th>
+                <th>Estimated Time</th>
+                <th>Order Number</th>
+                <th>Fulfill</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td><button>Commplete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <a href="adminhome.html">
+            <button class="back" type="button">Back to Admin Home</button>
+        </a>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>
+
 

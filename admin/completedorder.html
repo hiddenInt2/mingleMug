@@ -15,9 +15,8 @@
         margin: 0;
         padding: 0;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows:1fr auto;
     }
    
     .orders{
@@ -27,8 +26,8 @@
     }
     th,td{
         border: 1px solid black;
-        padding: 8px;
-        font-size: 22px;
+        padding: 10px;
+        font-size: 18px;
         background-color: lightskyblue;
     }
     button{
@@ -47,12 +46,20 @@
         background-color:aliceblue;
         color:black;
     }
+    .footer{
+        display:flex;
+        justify-content:flex-start;
+        padding:10px;
+    }
+    .container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+    }
 </Style>
 <body>
-    <a href="adminhome.html">
-        <button class="back" type="button">Back to Admin Home</button>
-    </a>
-
+    
+    <div class="container">
     <!--Connect to a database to show the latest orders-->
    <table border="1" id="orders">
     <tr>
@@ -72,11 +79,14 @@
         <td>Data 6</td>
     </tr>
    </table>
+    </div>
 
 
-   
-
-  
+    <div class="footer">
+        <a href="adminhome.html">
+            <button class="back" type="button">Back to Admin Home</button>
+        </a>
+    </div>
     
 </body>
 </html>
