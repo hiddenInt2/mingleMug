@@ -32,6 +32,12 @@
         font-size: 18px;
         background-color: lightskyblue;
     }
+    td:hover{
+        background-color:cornflowerblue;
+    }
+    th:hover{
+        background-color:cornflowerblue;
+    }
     .back{
         width: 180px;
         height: 60px;
@@ -59,6 +65,16 @@
             justify-content: center; 
             align-items: center; 
     }
+    .complete{
+        background-color:burlywood;
+        text-align:center;
+        font-weight:bold;
+        border-radius:2px;
+
+    }
+    .complete:hover{
+        background-color:aliceblue;
+    }
 </Style>
 <body>
     
@@ -83,7 +99,7 @@
                 <td>Data 5</td>
                 <td>Data 6</td>
                 <td>Data 7</td>
-                <td><button>Commplete</button></td>
+                <td><button class="complete" id="row1">Commplete</button></td>
             </tr>
         </table>
     </div>
@@ -94,6 +110,9 @@
         </a>
     </div>
     <script>
+        document.getElementById('row1').addEventListener('click',function(event){
+            alert('Order Fulfiled');
+        });
         
     </script>
 </body>
