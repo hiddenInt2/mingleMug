@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="killSwitch.css">
+    </header>
+    <body>
+        <div>
+            <!-- TODO: this button will have to access the database images and replace them all with a light image and will also have to do edit the description and names of items -->
+            <p id="finalMessage">It is finished... </p>
+            <button id="killSwitch" onclick="sellTheLights()">Sell the Lights</button>
+            <button id="glassCovering" onclick="breakGlass()"></button>
+
+            <script>
+                function breakGlass () {
+                    document.getElementById("glassCovering").style.display = "none";
+                }
+                function sellTheLights () {
+                    document.getElementById("killSwitch").style.display = "none";
+                    document.getElementById("finalMessage").style.display = "inherit";
+                }
+            </script>
+        </div>
+    </body>
+</html>

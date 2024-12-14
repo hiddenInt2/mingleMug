@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Orders</title>
+</head>
+<Style>
+    body{
+        background-image: url('../Main-pictures/Background2.png');
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .orders{
+        border-collapse: collapse;
+        width: 80%;
+        text-align: center;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 8px;
+        font-size: 22px;
+        background-color: lightskyblue;
+    }
+    button{
+        width: 180px;
+        height: 60px;
+        color: black;
+        background-color: burlywood;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin: 20px;
+        display: block;
+        text-align: center;
+    }
+    button:hover{
+        background-color:aliceblue;
+        color:black;
+    }
+</Style>
+<body>
+    <a href="adminhome.html">
+        <button class="back" type="button">Back to Admin Home</button>
+    </a>
+
+    <!--Connect to a database to show the latest orders-->
+   <table border="1" id="orders">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Order Details</th>
+        <th>Total Price</th>
+        <th>Order Time</th>
+        <th>Order Number</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+    </tr>
+   </table>
+
+
+   
+
+  
+    
+</body>
+</html>

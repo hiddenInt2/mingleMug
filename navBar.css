@@ -9,6 +9,17 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+#logo:hover{
+    position: fixed;
+    width: 5%;
+    left: 1.25%;
+    top: 0;
+    aspect-ratio: 1/1.5;
+    background-image: url("navBarImages/logo2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 #name {
     position: fixed;
     width: 15%;
@@ -16,12 +27,23 @@
     top: 0;
     aspect-ratio: 2/1;
     background-image: url("navBarImages/name.png");
-    background-size:120%;
+    background-size: contain;
     background-position:center;
     background-repeat: no-repeat;
     
 }
-
+#name:hover{
+    position: fixed;
+    width: 15%;
+    left: 42.5%;
+    top: 0;
+    aspect-ratio: 2/1;
+    background-image: url("navBarImages/name2.png");
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
 #dropdownMenuWrapper {
     position: fixed;
     top: 0;
@@ -37,7 +59,9 @@
     height: 66.66%;
     margin-top: 25%;
     background-image: url("navBarImages/menu.png");
-    background-size: cover;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
     overflow: visible;
 }
 #dropdownContent {
@@ -45,7 +69,7 @@
     display: none;
     width: 300%;
     margin-left: -200%;
-    margin-top: 100%;
+    margin-top: 85%;
     padding: 0;
 }
 #dropdownContent a {
@@ -75,6 +99,7 @@
     position: fixed;
     top: 0%;
     text-align: initial;
+    z-index: 1;
 }
 .headerBackground div {
     position: fixed;
