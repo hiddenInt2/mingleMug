@@ -79,11 +79,18 @@
         
                 addButton.addEventListener("click", () => {
                     // Check if the form already exists
-                    if (document.querySelector(".add-product-form")) {
-                        alert("Add Product form is already open.");
+                    if (document.querySelector(".edit-product-form")) {
+                        alert("Edit Product form is already open.");
                         return;
                     }
-        
+                    if(document.querySelector(".delete-product-form")){
+                        alert('Delete Product form is already open.');
+                        return;
+                    }
+                    if(document.querySelector(".add-product-form")){
+                        alert('Add Product form is already open.');
+                        return;
+                    }
                     // Create a form dynamically
                     const formContainer = document.createElement("div");
                     formContainer.classList.add("add-product-form");
@@ -136,8 +143,16 @@
                 
                 deleteButton.addEventListener("click", () => {
                     // Check if the form already exists
-                    if (document.querySelector(".delete-product-form")) {
-                        alert("Delete Product form is already open.");
+                    if (document.querySelector(".edit-product-form")) {
+                        alert("Edit Product form is already open.");
+                        return;
+                    }
+                    if(document.querySelector(".delete-product-form")){
+                        alert('Delete Product form is already open.');
+                        return;
+                    }
+                    if(document.querySelector(".add-product-form")){
+                        alert('Add Product form is already open.');
                         return;
                     }
 
@@ -173,6 +188,14 @@
                     // Check if the form already exists
                     if (document.querySelector(".edit-product-form")) {
                         alert("Edit Product form is already open.");
+                        return;
+                    }
+                    if(document.querySelector(".delete-product-form")){
+                        alert('Delete Product form is already open.');
+                        return;
+                    }
+                    if(document.querySelector(".add-product-form")){
+                        alert('Add Product form is already open.');
                         return;
                     }
 
