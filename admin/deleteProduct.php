@@ -36,5 +36,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productName'])) {
 }
 
 $conn->close();
-
+hearder("Location:productManagement.php");
 ?>
