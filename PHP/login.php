@@ -2,7 +2,7 @@
 // Start the session
 session_start();
 
-// Database connection (replace with your database credentials)
+
 // https://east1-phpmyadmin.dreamhost.com/signon.php?lang=en
 $host = "mysql.minglemug.knechtkode.com"; // Database host
 $dbname = "productsInfo"; // Database name
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $inputPassword = trim($_POST["password"]);
 
     // Query to find the user
-    $query = "SELECT * FROM users WHERE username = :username";
+    $query = "SELECT * FROM users WHERE user_name = :username";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(":username", $inputUsername, PDO::PARAM_STR);
     $stmt->execute();
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Password matches, log the user in
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $user["username"];
-            header("Location: admin_dashboard.php"); // Redirect to admin dashboard
+            header("Location: adminhome.php"); // Redirect to admin dashboard
             exit();
         } else {
             $error = "Invalid password.";
