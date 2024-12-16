@@ -137,10 +137,30 @@
         </a>
     </div>
     <script>
-        function fulfillOrder(orderNumber) {
-            alert('Order ' + orderNumber + ' Fulfilled');
-            
+       async function fulfillOrder(orderNumber) {
+            if (confirm('Are you sure you want to mark this order as fulfilled?')) {
+                try {
+                    const response = await fetch('fulfill_order.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ orderNumber }),
+                    });
+
+                    if (response.ok) {
+                        alert('Order ' + orderNumber + ' has been fulfilled and moved to Completed Orders.');
+                        location.reload(); // Refresh the page to show updated data
+                    } else {
+                        alert('Failed to fulfill the order. Please try again.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred while fulfilling the order.');
+                }
+            }
         }
+
     </script>
 </body>
 
