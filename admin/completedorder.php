@@ -67,7 +67,7 @@
     
     <div class="container">
     <!--Connect to a database to show the latest orders-->
-   <table border="1" id="orders" action="completedorder.php">
+   <table border="1" id="orders">
     <tr>
         <th>First Name</th>
         <th>Last Name</th>
@@ -76,14 +76,41 @@
         <th>Order Time</th>
         <th>Order Number</th>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+    <?php
+        // Database connection
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "orders_database";
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT first_name, last_name, order_details, total_price, time_of_order, order_number FROM completed_orders";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            // Output data for each row
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row['first_name']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['last_name']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['order_details']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['total_price']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['time_of_order']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['order_number']) . "</td>";
+                echo "</tr>";
+            }
+        } else {
+            echo "<tr><td colspan='6'>No completed orders found</td></tr>";
+        }
+
+        $conn->close();
+    ?>
    </table>
     </div>
 
@@ -93,6 +120,7 @@
             <button class="back" type="button">Back to Admin Home</button>
         </a>
     </div>
-    
+
+   
 </body>
 </html>
