@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="adminlogin.css">
     <title>Admin Login</title>
-</head>
     <style>
         .error {
             color: red;
@@ -13,10 +12,8 @@
         .invalid {
             border: 4px solid red;
         }
-        
-       
     </style>
-
+</head>
 <body>
     <form method="POST" id="loginForm" action="PHP/login.php">
         <h1>Admin Sign In</h1>
@@ -24,61 +21,51 @@
         <div class="align">
             <div class="username">
                 <label for="username">Username:</label>
-                <input type="text"id="username"name="username">
+                <input type="text" id="username" name="username" required>
                 <span class="error" id="usernameError"></span>
             </div>
 
             <div class="password">
                 <label for="password">Password:</label>
-                <input type="password"id="password"name="password">
+                <input type="password" id="password" name="password" required>
                 <span class="error" id="passwordError"></span>
             </div>
 
             <div class="LoginButton">
-                <button type="submit" id="submit" onclick='validateLogin(event)'>Login In</button>
+                <button type="submit">Log In</button>
                 <a href="index.html">
-                    <button type="button">Back Home</button>  
+                    <button type="button">Back Home</button>
                 </a>     
             </div>
-                
         </div>
-             
-    
     </form>
- 
+
     <script>
         function validateLogin(event) {
-            event.preventDefault(); // Prevent form submission
-    
-            // Get input values
+            event.preventDefault(); 
+
+            // Input elements
             const usernameField = document.getElementById("username");
             const passwordField = document.getElementById("password");
             const usernameError = document.getElementById("usernameError");
             const passwordError = document.getElementById("passwordError");
-    
-            // Reset error messages
-            usernameError.textContent = "";
-            passwordError.textContent = "";
-            usernameField.classList.remove("invalid");
-            passwordField.classList.remove("invalid");
-    
-            // Prepare data for server
+
+            // Reset errors
+            [usernameError, passwordError].forEach(err => err.textContent = "");
+            [usernameField, passwordField].forEach(field => field.classList.remove("invalid"));
+
             const formData = new FormData();
-            formData.append("username", usernameField.value);
-            formData.append("password", passwordField.value);
-    
-            // Send data to the server
-            fetch("PHP/login.php", {
-                method: "POST",
-                body: formData,
-            })
+            formData.append("username", usernameField.value.trim());
+            formData.append("password", passwordField.value.trim());
+
+            fetch("PHP/login.php", { method: "POST", body: formData })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
                     alert("Login successful! Redirecting...");
-                    window.location.href = "admin/adminhome.html"; // Redirect on success
+                    window.location.href = "admin/adminhome.html";
                 } else {
-                    // Show errors
+                    // Handle error responses
                     if (data.error === "username") {
                         usernameError.textContent = "Incorrect Username";
                         usernameField.classList.add("invalid");
@@ -92,18 +79,11 @@
             })
             .catch(error => {
                 console.error("Error:", error);
-                alert("An error occurred while processing your request. Please try again.");
+                alert("An error occurred while processing your request.");
             });
         }
-    
-        // Attach the event listener to the form
-        window.onload = function () {
-            const loginForm = document.getElementById("loginForm");
-            if (loginForm) {
-                loginForm.addEventListener("submit", validateLogin);
-            }
-        };
+
+        document.getElementById("loginForm").addEventListener("submit", validateLogin);
     </script>
-    
 </body>
 </html>
