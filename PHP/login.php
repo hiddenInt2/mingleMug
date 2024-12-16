@@ -2,19 +2,22 @@
 // Start the session
 session_start();
 
+// Set the Content-Type to JSON
 header("Content-Type: application/json");
 
-// https://east1-phpmyadmin.dreamhost.com/signon.php?lang=en
-$host = "mysql.minglemug.knechtkode.com"; // Database host
-$dbname = "productsInfo"; // Database name
-$username = "minglemug"; // Database username
-$password = "minglemug1204"; // Database password
+// Database credentials
+$host = "mysql.minglemug.knechtkode.com";
+$dbname = "productsInfo";
+$username = "minglemug";
+$password = "minglemug1204";
 
 try {
+    // Establish a database connection
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
+    echo json_encode(["success" => false, "error" => "Database connection failed."]);
+    exit();
 }
 
 // Check if the form is submitted
@@ -35,14 +38,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($inputPassword, $user["password"])) {
             // Password matches, log the user in
             $_SESSION["loggedin"] = true;
-            $_SESSION["username"] = $user["username"];
-            header("Location: <admin>adminhome.php"); // Redirect to admin dashboard
-            exit();
+            $_SESSION["username"] = $user["user_name"];
+            echo json_encode(["success" => true]); // Login successful
         } else {
-            $error = "Invalid password.";
+            // Invalid password
+            echo json_encode(["success" => false, "error" => "Invalid password."]);
         }
     } else {
-        $error = "No account found with that username.";
+        // No account found
+        echo json_encode(["success" => false, "error" => "No account found with that username."]);
     }
+} else {
+    // Invalid request method
+    echo json_encode(["success" => false, "error" => "Invalid request method."]);
 }
-?>
+
