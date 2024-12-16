@@ -87,8 +87,9 @@ $result = $conn->query($sql);
                     formContainer.classList.add("add-product-form");
         
                     formContainer.innerHTML = `
-                        <h3>Add New Product</h3>
-                        <form id="addProductForm" method="POST" action="addProduct.php">
+                       
+                        <form id="addProductForm" class="addProductForm" method="POST" action="addProduct.php">
+                             <h3>Add New Product</h3>
                             <label for="productName">Product Name:</label>
                             <input type="text" id="productName" name="productName" required><br><br>
         
@@ -152,8 +153,9 @@ $result = $conn->query($sql);
                     deleteFormContainer.classList.add("delete-product-form");
 
                     deleteFormContainer.innerHTML = `
-                        <h3>Delete Product</h3>
-                        <form id="deleteProductForm" method="POST" action="deleteProduct.php">
+                        
+                        <form id="deleteProductForm" class="deleteProductForm" method="POST" action="deleteProduct.php">
+                            <h3>Delete Product</h3>
                             <h4>Type the Name of the Product you wish to delete</h4>
                             <label for="productName">Product Name:</label>
                             <input type="text" id="productName" name="productName" required><br><br>
@@ -195,8 +197,9 @@ $result = $conn->query($sql);
                     editFormContainer.classList.add("edit-product-form");
 
                     editFormContainer.innerHTML = `
-                        <h3>Edit Product</h3>
-                        <form id="editProductForm" method="POST" action="editProduct.php">
+                        
+                        <form id="editProductForm" class="editProductForm" method="POST" action="editProduct.php">
+                            <h3>Edit Product</h3>
                             <h4>Choose a Product you would like to Edit</h4>
 
                             <label for="productdropdown">Select the Product that you want to Edit:</label>

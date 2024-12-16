@@ -15,6 +15,20 @@ body{
    
 
 }
+.addProductForm{
+    margin-left: 60%;
+    background-color:lightblue;
+}
+.deleteProductForm{
+    margin-left: 60%;
+    background-color:lightblue;
+
+}
+.editProductForm{
+    margin-left: 60%;
+    background-color:lightblue;
+
+}
 h1{
     font-size:40px;
     
