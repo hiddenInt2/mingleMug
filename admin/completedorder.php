@@ -78,10 +78,10 @@
     </tr>
     <?php
         // Database connection
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "orders_database";
+        $servername = "mysql.minglemug.knechkode.com";
+        $username = "minglemug";
+        $password = "minglemug1204";
+        $dbname = "completedorders";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -90,7 +90,7 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT first_name, last_name, order_details, total_price, time_of_order, order_number FROM completed_orders";
+        $sql = "SELECT first_name, last_name, order_details, total_price, time_of_order, order_number FROM completedorders";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
