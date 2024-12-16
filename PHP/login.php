@@ -2,6 +2,7 @@
 // Start the session
 session_start();
 
+header("Content-Type: application/json");
 
 // https://east1-phpmyadmin.dreamhost.com/signon.php?lang=en
 $host = "mysql.minglemug.knechtkode.com"; // Database host
@@ -35,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Password matches, log the user in
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $user["username"];
-            header("Location: adminhome.php"); // Redirect to admin dashboard
+            header("Location: <admin>adminhome.php"); // Redirect to admin dashboard
             exit();
         } else {
             $error = "Invalid password.";
